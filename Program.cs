@@ -20,3 +20,24 @@ for (int i = 0; i < arrayFirst.Length; i++)
         arraySecond[i] = arrayFirst[i];
     }
 }
+void PrintArray(string[] array)
+{
+    Console.Write("[");
+    {
+        for (int i = 0; i < array.Length; i++)
+            if (array[i] != null)
+            {
+                Console.Write($" \"{array[i]}\" ");
+                if (i < array.Length - 1)
+                {
+                    Console.Write(",");
+                }
+            }
+    }
+    Console.Write("]");
+}
+
+PrintArray(arrayFirst);
+Console.Write(" => ");
+PrintArray(arraySecond);
+
