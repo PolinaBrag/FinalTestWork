@@ -10,3 +10,13 @@ for (int i = 0; i < arrayFirst.Length; i++)
     arrayFirst[i] = userString;
 }
 
+string[] arraySecond = new string[arrayFirst.Length];
+int maxLengthOfString = 3;
+
+for (int i = 0; i < arrayFirst.Length; i++)
+{
+    if (arrayFirst[i].Length <= maxLengthOfString)
+    {
+        arraySecond[i] = arrayFirst[i];
+    }
+}
